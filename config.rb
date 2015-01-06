@@ -3,11 +3,12 @@ ready do
 end
 
 set :css_dir, 'css'
+set :js_dir, 'js'
 
 configure :build do
-  activate :minify_html
-  activate :minify_css
-  activate :minify_javascript
+  #activate :minify_html
+  #activate :minify_css
+  #activate :minify_javascript
 end
 
 activate :deploy do |deploy|
