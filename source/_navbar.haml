@@ -11,10 +11,5 @@
    %a.navbar-brand{href: '/'} BADthings
   #navbar.navbar-collapse.collapse
    %ul.nav.navbar-nav
-    -# TODO: add .active to correct item
-    %li
-     %a{href: '/'}
-      %span.glyphicon.glyphicon-home
-      Home
-    %li
-     %a{href: '/about.html'} About us
+    =nav_item '/index.html', 'Home', 'home'
+    =nav_item '/about.html', 'About us'

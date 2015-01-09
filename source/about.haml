@@ -1,5 +1,15 @@
 ---
 title: About us
 ---
-%p
- TO DO...
+.col-sm-6
+ %h2 Paul
+ .photo
+  %img{:src=>lorem.image('300x200', :text=>'paul', :background_color=>'aaf', :color=>'000')}
+ -(1..4).each do |i|
+  %p= lorem.paragraph
+.col-sm-6
+ %h2 Sophie
+ .photo
+  %img{:src=>lorem.image('300x200', :text=>'sophie', :background_color=>'faa', :color=>'000')}
+ -(1..4).each do |i|
+  %p= lorem.paragraph

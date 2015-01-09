@@ -4,8 +4,9 @@
  %body
   .container
    =partial :navbar
-   - if current_page.data.title
-    .page-header
-     %h1= current_page.data.title
-   =yield
+   .container-fluid
+    - if current_page.data.title
+     .page-header
+      %h1= current_page.data.title
+    =yield
    =partial :footer
